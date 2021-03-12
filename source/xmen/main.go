@@ -27,7 +27,7 @@ func Server(w http.ResponseWriter, r *http.Request) {
 	if js {
 		w.WriteHeader(200)
 		w.Write([]byte("HTTP 200-OK"))
-		HTTP 200-OK
+		
 	}else{
 		w.WriteHeader(http.StatusForbidden)
         w.Write([]byte("403 Forbidden"))
