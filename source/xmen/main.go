@@ -40,6 +40,6 @@ func Server(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/", Server)
+	http.HandleFunc("/mutant", Server)
 	http.ListenAndServe(":3009", nil)
 }
