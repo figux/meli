@@ -3,7 +3,7 @@ package xmenrecluting_test
 import (
 	"testing"
 	"fmt"
-	"service"
+	"xmenrecluting"
 )
 
 func TestMutant(t *testing.T) {
