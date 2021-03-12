@@ -1,8 +1,9 @@
-FROM golang:latest as builder
+FROM golang:1.15.10 as builder
 
 RUN mkdir /app
 COPY ./source/xmen /app
 WORKDIR /app
+
 
 # Build the Go app
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main .

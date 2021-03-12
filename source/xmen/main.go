@@ -22,16 +22,20 @@ func Server(w http.ResponseWriter, r *http.Request) {
 
 
 	js := xmenrecluting.IsMutant(p)
-	var stringResponse = "NO es mutante";
+	
 
 	if js {
-		stringResponse = "Es mutante";
+		w.WriteHeader(200)
+		w.Write([]byte("HTTP 200-OK"))
+		HTTP 200-OK
+	}else{
+		w.WriteHeader(http.StatusForbidden)
+        w.Write([]byte("403 Forbidden"))
 	}
 
 
-	w.Header().Set("Content-Type", "application/json")
-  	w.Write([]byte(stringResponse))
-
+	//w.Header().Set("Content-Type", "application/json")
+  	//w.Write([]byte(stringResponse))
 	
 }
 
