@@ -21,3 +21,8 @@ Ejemplos de respuestas:
 
 # NO Mutante
 <img src="https://figuxtests.s3-us-west-2.amazonaws.com/pruebaMELI/NoMutante.png"/>
+
+# URL de la API
+
+IP: 44.239.48.102
+Port: 3009
